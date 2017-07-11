@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="支出金额："/>
+        <EditText
+            android:id="@+id/ed_money"
+            android:layout_height="50dp"
+            android:hint="输入金额（元）"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="支出方式："/>
+        <Spinner
+            android:id="@+id/sp_mode"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="支出分类："/>
+        <Spinner
+            android:id="@+id/sp_type"
+            android:layout_height="50dp"
+            android:spinnerMode="dropdown"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="支出时间："/>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="选择时间"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="支出备注："/>
+        <EditText
+            android:id="@+id/ed_explain"
+            android:layout_height="50dp"
+            android:hint="输入备注"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/bt_reset"
+            android:layout_margin="5dp"
+            android:text="重置"/>
+        <Button
+            android:id="@+id/bt_ok"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_margin="5dp"
+            android:text="确定"/>
+    </TableRow>
+
+
+</TableLayout>
